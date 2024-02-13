@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  :root {
+    --clr-1: #3B5998;
+    --clr-2: #085f67;
+    --clr-3: #250f75;
+    --clr-4: #2d8f85;
+    --clr-5: #4b74ccdc;
+  }
+
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    font-family: "Kalam", cursive;
+        
+      
+}
+.navbar{
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background-color: #3B5998;
+    color:white;
+}
+.nav-logo{
+    height: 65px;
+    width: 113px;
+}
+.logo{
+    background-image: url("Logo3.png");
+    background-size: cover;
+    height: 65px;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid #FB9913ff;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+    width: 620px;
+    height: 35px;
+    border-radius: 4px;
+}
+.search-select{
+    background-color: #FB9913ff;
+    width: 50px;
+    height: 2.2rem; ;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1.25rem;
+    border: none
+
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    background-color: #FB9913ff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0F1111;
+}
+.nav-search:hover{
+    border: 2px solid #FB9913ff;
+}
+span{
+    font-size: 0.7rem;
+
+}
+.nav-krishna{
+    height: 65px;
+    width: 113px;
+}
+.krishna{
+    background-image: url("Krishna1.png");
+    background-size: cover;
+    height: 65px;
+    width: 100%;
+}
+
+/* Content Box */
+.content-box{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color: #FB9913ff;
+    
+}
+.main{
+    background-color: #4b74ccdc;
+    height: 450px;
+    width: 50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius:10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.30);
+    
+}
+.box-content h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position:relative;
+}
+.box-content h2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    border-radius: 3px;
+    background: #FB9913ff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box-content p{
+    font-size: 26px;
+    min-height: 110px;
+}
+.box-content p::before, .box-content p::after{
+    content: '""';
+}
+.button{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.buttons{
+    background: #FB9913ff;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.buttons2{
+    background: #25D366;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.buttons2 img{
+    width: 18px;
+    margin-right: 4px;
+}
+
+  
+.main::before,
+.main::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3)
+    );
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+  }
+  
+  .main::after {
+    filter: blur(3.5rem);
+  }
+  
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
