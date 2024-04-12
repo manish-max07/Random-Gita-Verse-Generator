@@ -258,6 +258,7 @@ span{
   @media(max-width: 610px){
     .main{
         height: auto;
+        
 
     }
     .content-box{
@@ -288,6 +289,10 @@ span{
 }
 
 @media (max-width: 610px) {
+    .box-content p{
+        font-size: 12px;
+        min-height: 60px;
+    }
     .nav-logo{
         display: none;
 
