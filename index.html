@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-        <div class="nav-krishna border">
+        <a href="https://random-gita-verse-generator.vercel.app/"><div class="nav-krishna border"></a>
             <div class="krishna"></div>
 
         </div>
@@ -70,9 +70,15 @@
 function shareOnWhatsApp() {
             const verseText = document.querySelector('.box-content p').textContent;
             const shareText = encodeURIComponent(verseText);
-            const whatsappURL = `https://wa.me/?text=${shareText} 
+            const whatsappMessage = `${shareText}
+        
+            https://random-gita-verse-generator.vercel.app/
+
             Share with your friends and family. Click on the link to get daily random gita verse for universal guidance.`;
+            const whatsappURL = `https://wa.me/?text=${(whatsappMessage)}`;
             window.open(whatsappURL, '_blank');
+
+
         }
 
 
