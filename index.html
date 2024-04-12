@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Gita Verse Generator</title>
 </head>
@@ -69,13 +70,17 @@
 function shareOnWhatsApp() {
             const verseText = document.querySelector('.box-content p').textContent;
             const shareText = encodeURIComponent(verseText);
-            const whatsappURL = `https://wa.me/?text=${shareText} Share with your friends and family. Click on the link to get daily random gita verse for universal guidance.`;
+            const whatsappURL = `https://wa.me/?text=${shareText} 
+            Share with your friends and family. Click on the link to get daily random gita verse for universal guidance.`;
             window.open(whatsappURL, '_blank');
         }
+
+
 
 // Call the function to get and display the verse
 getVerse();
 
         </script>
+
 </body>
 </html>
