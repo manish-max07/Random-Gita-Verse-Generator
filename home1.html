@@ -57,7 +57,7 @@
     const data = await response.json();
 
     const verse = data.slok; // Extract the verse
-    const translation = data.tej; // Choose one translation, for example, "tej"
+    const translation = data.sankar; // Choose one translation, for example, "tej"
     const translationElement = document.querySelector('.box-content p.translation');
     if (translationElement) {
         translationElement.remove();
