@@ -56,13 +56,13 @@
     const response = await fetch(api_url);
     const data = await response.json();
 
-    const verse = data.slok; // Extract the verse
-    const translation = data.sankar; // Choose one translation, for example, "tej"
+    const verse = data.slok; 
+    const translation = data.tej; 
     const translationElement = document.querySelector('.box-content p.translation');
     if (translationElement) {
         translationElement.remove();
     }
-    // Display the verse and translation
+    
     document.querySelector('.box-content h2').textContent = "Today's Gita Verse";
     document.querySelector('.box-content p').textContent = verse;
     document.querySelector('.box-content p').insertAdjacentHTML('afterend', `<p class="translation">${translation.author}: ${translation.ht}</p>`);
@@ -86,7 +86,7 @@ function shareOnWhatsApp() {
 
 
 
-// Call the function to get and display the verse
+
 getVerse();
 
         </script>
