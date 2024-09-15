@@ -122,7 +122,7 @@ span{
     
 }
 .box-content h2{
-    font-size: 11px;
+    font-size: 32px;
     margin-bottom: 40px;
     position:relative;
 }
@@ -138,7 +138,7 @@ span{
     transform: translateX(-50%);
 }
 .box-content p{
-    font-size: 11px;
+    font-size: 26px;
     min-height: 110px;
 }
 .box-content p::before, .box-content p::after{
